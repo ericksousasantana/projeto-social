@@ -6,6 +6,15 @@
 body{
     background: url("imagens/fundo-madeira.jpg") center no-repeat fixed;
     background-size: cover;
+    height: 100dvh;
+    position: relative;
+}
+
+.centro{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -56%);
 }
 
 .celular{
@@ -15,6 +24,7 @@ body{
     margin: auto;
     margin-top: 25px;
     position: relative;
+    display: inline-block;
 }
 
 div.celular > iframe{
@@ -28,9 +38,34 @@ div.celular > iframe{
 iframe{
     overflow: hidden;
     scrollbar-color: rgb(255, 0, 0);
+    display: inline-block;
 }
 
 nav{
-    display: flex;
-    justify-content: right;
+    display: inline-block;
+    margin-top: 50px;
+    margin-left: 86%;
+}
+nav img{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+}
+nav li{
+    margin-bottom: 20px;
+    position: static;
+    border-radius: 50%;
+}
+ul{
+    list-style: none;
+    border-radius: 50%;
+}
+nav img:hover{
+    box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.500);
+    border: 1px solid white;
+    margin-right: 1px;
+    transition-duration: .50s;
+}
+nav li:hover{
+    margin-bottom: 19px;
 }
