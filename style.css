@@ -50,9 +50,11 @@ nav img{
     height: 60px;
     width: 60px;
     border-radius: 50%;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.412);
 }
 nav li{
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     position: static;
     border-radius: 50%;
 }
@@ -61,11 +63,8 @@ ul{
     border-radius: 50%;
 }
 nav img:hover{
-    box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.500);
+    box-shadow: 3px 5px 5px 3px rgba(0, 0, 0, 0.412);
+    transform: translate(-4px, -4px);
     border: 1px solid white;
-    margin-right: 1px;
-    transition-duration: .50s;
-}
-nav li:hover{
-    margin-bottom: 19px;
+    transition: transform .5s, box-shadow .5s, border .3s;
 }
